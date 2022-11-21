@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -18,10 +18,11 @@ function UploadVideo() {
     formData.append("genre", data.genre);
     formData.append("age", data.age);
     formData.append("video", data.video[0]);
-    console.log(formData);
+
     const res = await axios({
       method: "post",
-      url: "https://a2-backend.azurewebsites.net/api/v1.0/videos?code=xQX1ntswzMaJJcrsMeuFiSq88IY-M6unxUiYg6ijYhzyAzFu7UFacA==",
+      url:
+        "https://a2-backend.azurewebsites.net/api/v1.0/videos?code=xQX1ntswzMaJJcrsMeuFiSq88IY-M6unxUiYg6ijYhzyAzFu7UFacA==",
       data: formData,
       headers: { "Content-Type": "multipart/form-data" },
     })

@@ -1,12 +1,9 @@
 import React from "react";
-import { useEffect, useState } from "react";
 import VideoService from "../../services/video.service";
-import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
 function AddComment(props) {
   const { register, handleSubmit } = useForm();
-  const navigate = useNavigate();
 
   const onSubmit = (data) => {
     const formData = new FormData();

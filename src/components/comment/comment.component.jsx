@@ -10,7 +10,7 @@ function Comment(props) {
     VideoService.getComments(props.videoID)
       .then((comments) => setComments(comments))
       .catch((error) => {});
-  }, []);
+  }, [props.videoID]);
 
   return (
     <div>

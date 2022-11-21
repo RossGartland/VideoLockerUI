@@ -1,18 +1,8 @@
-import React, { Component, Router, useEffect, useState } from "react";
-import {
-  Routes,
-  Route,
-  Link,
-  Outlet,
-  BrowserRouter,
-  HashRouter,
-} from "react-router-dom";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Dashboard from "./components/dashboard/dashboard.component";
 import MyLayout from "./components/layout/layout.component";
-import MyNav from "./components/nav/nav.component";
-import UploadVideo from "./components/upload-video/upload-video.component";
-import VideoContent from "./components/video/video.component";
 import CreatorDashboard from "./pages/creator-board/creator-board.component";
 import Login from "./pages/login/login.component";
 import SignUp from "./pages/sign-up/sign-up.component";

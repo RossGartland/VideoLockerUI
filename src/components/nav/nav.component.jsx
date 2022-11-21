@@ -11,7 +11,7 @@ function MyNav() {
     if (currentUser !== null) {
       setShowAdmin(currentUser.isAdmin);
     }
-  }, []);
+  }, [currentUser]);
   const logOut = () => {
     UserService.logout();
     navigate("/");

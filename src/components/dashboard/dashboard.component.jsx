@@ -1,10 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import { useState, useEffect } from "react";
-import { Player } from "video-react";
 import "../../../node_modules/video-react/dist/video-react.css";
-import Videos from "../video/video.component";
 import VideoService from "../../services/video.service";
-import MyNav from "../nav/nav.component";
 import { Link } from "react-router-dom";
 import "./dashboard.style.css";
 
