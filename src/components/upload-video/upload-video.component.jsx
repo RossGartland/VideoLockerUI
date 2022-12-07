@@ -21,8 +21,7 @@ function UploadVideo() {
 
     const res = await axios({
       method: "post",
-      url:
-        "https://a2-backend.azurewebsites.net/api/v1.0/videos?code=xQX1ntswzMaJJcrsMeuFiSq88IY-M6unxUiYg6ijYhzyAzFu7UFacA==",
+      url: "https://a2-backend.azurewebsites.net/api/v1.0/videos?code=V7M4ipy9eZ0VUblPIBqsjjN2ycMP0rq5ijFyuykAFZ6lAzFuDD9w7A==",
       data: formData,
       headers: { "Content-Type": "multipart/form-data" },
     })
