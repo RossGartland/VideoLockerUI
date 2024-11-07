@@ -6,7 +6,7 @@ import UploadVideo from "../components/upload-video/upload-video.component";
 const login = (formData) => {
   return axios
     .post(
-      "https://a2-backend.azurewebsites.net/api/v1.0/auth/login?",
+      "https://a2-backend.azurewebsites.net/api/v1.2/auth/login?",
       formData,
       {
         "Content-Type": "multipart/form-data",
@@ -23,7 +23,7 @@ const login = (formData) => {
 };
 
 const getUserDetails = (userID) => {
-  const url = "https://a2-backend.azurewebsites.net/api/v1.0/auth/user/";
+  const url = "https://a2-backend.azurewebsites.net/api/v1.2/auth/user/";
   return axios.get(url + userID).then((res) => {
     return res.data;
   });
